@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "4EB2B190-D64B-414D-88F5-662F9A3C4DA5"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FB76ECEA-0B7A-4CDD-BE16-E4A0EDF03AEF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MusicApp/Helper/YotubmePlayer.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "getVideoDuration(videoId:apiKey:completion:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "FB76ECEA-0B7A-4CDD-BE16-E4A0EDF03AEF - c9f41c815722c4b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MusicApp.getVideoDuration(videoId: Swift.String, apiKey: Swift.String, completion: (Swift.Int, Swift.Int) -&gt; ()) -&gt; ()"
+                  moduleName = "MusicApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mono-hyd-mac-13/Xcode%20Projects/Deepika/MusicApp/MusicApp/Helper/YotubmePlayer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "2344">
+               </Location>
+               <Location
+                  uuid = "FB76ECEA-0B7A-4CDD-BE16-E4A0EDF03AEF - c9f41c815722c492"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MusicApp.getVideoDuration(videoId: Swift.String, apiKey: Swift.String, completion: (Swift.Int, Swift.Int) -&gt; ()) -&gt; ()"
+                  moduleName = "MusicApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mono-hyd-mac-13/Xcode%20Projects/Deepika/MusicApp/MusicApp/Helper/YotubmePlayer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "3164">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

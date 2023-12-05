@@ -1,0 +1,864 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000C4F482B077919001D0277 /* MusicBottomSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000C4F472B077919001D0277 /* MusicBottomSheetController.swift */; };
+		000C50202B078D0E001D0277 /* YTPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = 000C501E2B078D0E001D0277 /* YTPlayer.html */; };
+		000C50212B078D0E001D0277 /* YouTubePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000C501F2B078D0E001D0277 /* YouTubePlayer.swift */; };
+		000C502A2B079106001D0277 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000C50232B079106001D0277 /* Media.xcassets */; };
+		000C502B2B079106001D0277 /* FloatingAudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000C50242B079106001D0277 /* FloatingAudioModel.swift */; };
+		000C502C2B079106001D0277 /* FloatingAudioPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000C50252B079106001D0277 /* FloatingAudioPlayerView.xib */; };
+		000C502D2B079106001D0277 /* FloatingAudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000C50262B079106001D0277 /* FloatingAudioPlayerView.swift */; };
+		000C50322B07B9F0001D0277 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 000C50312B07B9F0001D0277 /* GoogleService-Info.plist */; };
+		004992642B075E660035A4E6 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004992632B075E660035A4E6 /* Playlist.swift */; };
+		004992692B075F7E0035A4E6 /* MusicSelectedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004992682B075F7E0035A4E6 /* MusicSelectedDelegate.swift */; };
+		0049926B2B075FC10035A4E6 /* MusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0049926A2B075FC10035A4E6 /* MusicViewModel.swift */; };
+		008D00E52B080BA100858D0E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D00E42B080BA100858D0E /* ViewModel.swift */; };
+		008D00E92B08119C00858D0E /* CommonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D00E72B08119C00858D0E /* CommonCell.swift */; };
+		008D00EA2B08119C00858D0E /* CommonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 008D00E82B08119C00858D0E /* CommonCell.xib */; };
+		008D00EC2B0818DE00858D0E /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D00EB2B0818DE00858D0E /* BackButton.swift */; };
+		008D00EF2B081BE300858D0E /* AddSongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D00EE2B081BE300858D0E /* AddSongVC.swift */; };
+		008D00F12B083B6E00858D0E /* SearchPlayListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D00F02B083B6E00858D0E /* SearchPlayListVC.swift */; };
+		008D00F32B0843A900858D0E /* SharedPlayListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D00F22B0843A900858D0E /* SharedPlayListVC.swift */; };
+		00DA15BC2B074B3300874433 /* IndicatorHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA15BB2B074B3300874433 /* IndicatorHud.swift */; };
+		2F7952032B02637F000F33FD /* CreatePlaylistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7952002B02637E000F33FD /* CreatePlaylistVC.swift */; };
+		2F7952042B02637F000F33FD /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7952012B02637F000F33FD /* NotificationVC.swift */; };
+		2F7952052B02637F000F33FD /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7952022B02637F000F33FD /* HomeVC.swift */; };
+		2F7952072B026439000F33FD /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7952062B026439000F33FD /* ContainerViewController.swift */; };
+		2F79520B2B0278C8000F33FD /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79520A2B0278C8000F33FD /* EditProfileVC.swift */; };
+		2F79520D2B03EBED000F33FD /* SongsDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F79520C2B03EBED000F33FD /* SongsDetailsVC.swift */; };
+		2F7952142B046597000F33FD /* AddSongsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7952132B046597000F33FD /* AddSongsVC.swift */; };
+		2FF62EB12AFE8DD500B15658 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF62EB02AFE8DD500B15658 /* AppDelegate.swift */; };
+		2FF62EB32AFE8DD500B15658 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF62EB22AFE8DD500B15658 /* SceneDelegate.swift */; };
+		2FF62EB82AFE8DD500B15658 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF62EB62AFE8DD500B15658 /* Main.storyboard */; };
+		2FF62EBA2AFE8DD600B15658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF62EB92AFE8DD600B15658 /* Assets.xcassets */; };
+		2FF62EBD2AFE8DD600B15658 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF62EBB2AFE8DD600B15658 /* LaunchScreen.storyboard */; };
+		2FF62ECA2AFE8EC100B15658 /* ButtonWithShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF62EC62AFE8EC100B15658 /* ButtonWithShadow.swift */; };
+		2FF62ECB2AFE8EC100B15658 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF62EC72AFE8EC100B15658 /* DesignableView.swift */; };
+		2FF62ECC2AFE8EC100B15658 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF62EC82AFE8EC100B15658 /* Extensions.swift */; };
+		2FF62ECD2AFE8EC100B15658 /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF62EC92AFE8EC100B15658 /* ButtonExtension.swift */; };
+		2FF62ED12AFE8ED000B15658 /* FireStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF62ECE2AFE8ED000B15658 /* FireStoreManager.swift */; };
+		2FF62ED22AFE8ED000B15658 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF62ECF2AFE8ED000B15658 /* UserDefaultsManager.swift */; };
+		2FF62ED32AFE8ED000B15658 /* ForgetPasswordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF62ED02AFE8ED000B15658 /* ForgetPasswordManager.swift */; };
+		2FF62EDA2AFE935600B15658 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62ED92AFE935600B15658 /* FirebaseAnalytics */; };
+		2FF62EDC2AFE935600B15658 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62EDB2AFE935600B15658 /* FirebaseAnalyticsOnDeviceConversion */; };
+		2FF62EDE2AFE935600B15658 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62EDD2AFE935600B15658 /* FirebaseAnalyticsSwift */; };
+		2FF62EE02AFE935600B15658 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62EDF2AFE935600B15658 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		2FF62EE22AFE935600B15658 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62EE12AFE935600B15658 /* FirebaseAppCheck */; };
+		2FF62EE42AFE935600B15658 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62EE32AFE935600B15658 /* FirebaseAppDistribution-Beta */; };
+		2FF62EE62AFE935600B15658 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62EE52AFE935600B15658 /* FirebaseAuth */; };
+		2FF62EE82AFE935600B15658 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62EE72AFE935600B15658 /* FirebaseAuthCombine-Community */; };
+		2FF62EEA2AFE935600B15658 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62EE92AFE935600B15658 /* FirebaseCrashlytics */; };
+		2FF62EEC2AFE935600B15658 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62EEB2AFE935600B15658 /* FirebaseDatabase */; };
+		2FF62EEE2AFE935600B15658 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62EED2AFE935600B15658 /* FirebaseDatabaseSwift */; };
+		2FF62EF02AFE935600B15658 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62EEF2AFE935600B15658 /* FirebaseDynamicLinks */; };
+		2FF62EF22AFE935600B15658 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62EF12AFE935600B15658 /* FirebaseFirestore */; };
+		2FF62EF42AFE935600B15658 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62EF32AFE935600B15658 /* FirebaseFirestoreCombine-Community */; };
+		2FF62EF62AFE935600B15658 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62EF52AFE935600B15658 /* FirebaseFirestoreSwift */; };
+		2FF62EF82AFE935600B15658 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62EF72AFE935600B15658 /* FirebaseFunctions */; };
+		2FF62EFA2AFE935600B15658 /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62EF92AFE935600B15658 /* FirebaseFunctionsCombine-Community */; };
+		2FF62EFC2AFE935600B15658 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62EFB2AFE935600B15658 /* FirebaseInAppMessaging-Beta */; };
+		2FF62EFE2AFE935600B15658 /* FirebaseInAppMessagingSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62EFD2AFE935600B15658 /* FirebaseInAppMessagingSwift-Beta */; };
+		2FF62F002AFE935600B15658 /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62EFF2AFE935600B15658 /* FirebaseInstallations */; };
+		2FF62F022AFE935600B15658 /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62F012AFE935600B15658 /* FirebaseMLModelDownloader */; };
+		2FF62F042AFE935600B15658 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62F032AFE935600B15658 /* FirebaseMessaging */; };
+		2FF62F062AFE935600B15658 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62F052AFE935600B15658 /* FirebasePerformance */; };
+		2FF62F082AFE935600B15658 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62F072AFE935600B15658 /* FirebaseRemoteConfig */; };
+		2FF62F0A2AFE935600B15658 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62F092AFE935600B15658 /* FirebaseRemoteConfigSwift */; };
+		2FF62F0C2AFE935600B15658 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62F0B2AFE935600B15658 /* FirebaseStorage */; };
+		2FF62F0E2AFE935600B15658 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF62F0D2AFE935600B15658 /* FirebaseStorageCombine-Community */; };
+		2FF62F102AFE959300B15658 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF62F0F2AFE959200B15658 /* LoginVC.swift */; };
+		2FF62F122AFE95BB00B15658 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF62F112AFE95BB00B15658 /* SignUpVC.swift */; };
+		2FF62F142AFE95E200B15658 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF62F132AFE95E200B15658 /* ForgotPassword.swift */; };
+		806EFC692B08ED19003DF42E /* Usermodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806EFC682B08ED19003DF42E /* Usermodel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000C4F472B077919001D0277 /* MusicBottomSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicBottomSheetController.swift; sourceTree = "<group>"; };
+		000C501E2B078D0E001D0277 /* YTPlayer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = YTPlayer.html; sourceTree = "<group>"; };
+		000C501F2B078D0E001D0277 /* YouTubePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubePlayer.swift; sourceTree = "<group>"; };
+		000C50232B079106001D0277 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		000C50242B079106001D0277 /* FloatingAudioModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingAudioModel.swift; sourceTree = "<group>"; };
+		000C50252B079106001D0277 /* FloatingAudioPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloatingAudioPlayerView.xib; sourceTree = "<group>"; };
+		000C50262B079106001D0277 /* FloatingAudioPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingAudioPlayerView.swift; sourceTree = "<group>"; };
+		000C50312B07B9F0001D0277 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		004992632B075E660035A4E6 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		004992682B075F7E0035A4E6 /* MusicSelectedDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicSelectedDelegate.swift; sourceTree = "<group>"; };
+		0049926A2B075FC10035A4E6 /* MusicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewModel.swift; sourceTree = "<group>"; };
+		008D00E42B080BA100858D0E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		008D00E72B08119C00858D0E /* CommonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCell.swift; sourceTree = "<group>"; };
+		008D00E82B08119C00858D0E /* CommonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonCell.xib; sourceTree = "<group>"; };
+		008D00EB2B0818DE00858D0E /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		008D00EE2B081BE300858D0E /* AddSongVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSongVC.swift; sourceTree = "<group>"; };
+		008D00F02B083B6E00858D0E /* SearchPlayListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlayListVC.swift; sourceTree = "<group>"; };
+		008D00F22B0843A900858D0E /* SharedPlayListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedPlayListVC.swift; sourceTree = "<group>"; };
+		00DA15BB2B074B3300874433 /* IndicatorHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorHud.swift; sourceTree = "<group>"; };
+		2F7952002B02637E000F33FD /* CreatePlaylistVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 3; lastKnownFileType = sourcecode.swift; path = CreatePlaylistVC.swift; sourceTree = "<group>"; };
+		2F7952012B02637F000F33FD /* NotificationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		2F7952022B02637F000F33FD /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		2F7952062B026439000F33FD /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		2F79520A2B0278C8000F33FD /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditProfileVC.swift; path = MusicApp/ViewController/EditProfileVC.swift; sourceTree = SOURCE_ROOT; };
+		2F79520C2B03EBED000F33FD /* SongsDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsDetailsVC.swift; sourceTree = "<group>"; };
+		2F7952132B046597000F33FD /* AddSongsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSongsVC.swift; sourceTree = "<group>"; };
+		2FF62EAD2AFE8DD500B15658 /* MusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FF62EB02AFE8DD500B15658 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2FF62EB22AFE8DD500B15658 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2FF62EB72AFE8DD500B15658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2FF62EB92AFE8DD600B15658 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FF62EBC2AFE8DD600B15658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2FF62EBE2AFE8DD600B15658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FF62EC62AFE8EC100B15658 /* ButtonWithShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonWithShadow.swift; sourceTree = "<group>"; };
+		2FF62EC72AFE8EC100B15658 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		2FF62EC82AFE8EC100B15658 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2FF62EC92AFE8EC100B15658 /* ButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
+		2FF62ECE2AFE8ED000B15658 /* FireStoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireStoreManager.swift; sourceTree = "<group>"; };
+		2FF62ECF2AFE8ED000B15658 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		2FF62ED02AFE8ED000B15658 /* ForgetPasswordManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPasswordManager.swift; sourceTree = "<group>"; };
+		2FF62F0F2AFE959200B15658 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		2FF62F112AFE95BB00B15658 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		2FF62F132AFE95E200B15658 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		806EFC682B08ED19003DF42E /* Usermodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usermodel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FF62EAA2AFE8DD500B15658 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FF62EEC2AFE935600B15658 /* FirebaseDatabase in Frameworks */,
+				2FF62EFA2AFE935600B15658 /* FirebaseFunctionsCombine-Community in Frameworks */,
+				2FF62EF22AFE935600B15658 /* FirebaseFirestore in Frameworks */,
+				2FF62EDE2AFE935600B15658 /* FirebaseAnalyticsSwift in Frameworks */,
+				2FF62EDA2AFE935600B15658 /* FirebaseAnalytics in Frameworks */,
+				2FF62EDC2AFE935600B15658 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				2FF62F022AFE935600B15658 /* FirebaseMLModelDownloader in Frameworks */,
+				2FF62EF62AFE935600B15658 /* FirebaseFirestoreSwift in Frameworks */,
+				2FF62EE22AFE935600B15658 /* FirebaseAppCheck in Frameworks */,
+				2FF62EE02AFE935600B15658 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				2FF62EE62AFE935600B15658 /* FirebaseAuth in Frameworks */,
+				2FF62EEA2AFE935600B15658 /* FirebaseCrashlytics in Frameworks */,
+				2FF62F0A2AFE935600B15658 /* FirebaseRemoteConfigSwift in Frameworks */,
+				2FF62EFC2AFE935600B15658 /* FirebaseInAppMessaging-Beta in Frameworks */,
+				2FF62EEE2AFE935600B15658 /* FirebaseDatabaseSwift in Frameworks */,
+				2FF62EF82AFE935600B15658 /* FirebaseFunctions in Frameworks */,
+				2FF62F0E2AFE935600B15658 /* FirebaseStorageCombine-Community in Frameworks */,
+				2FF62F082AFE935600B15658 /* FirebaseRemoteConfig in Frameworks */,
+				2FF62EE42AFE935600B15658 /* FirebaseAppDistribution-Beta in Frameworks */,
+				2FF62EE82AFE935600B15658 /* FirebaseAuthCombine-Community in Frameworks */,
+				2FF62F062AFE935600B15658 /* FirebasePerformance in Frameworks */,
+				2FF62EFE2AFE935600B15658 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
+				2FF62F0C2AFE935600B15658 /* FirebaseStorage in Frameworks */,
+				2FF62EF02AFE935600B15658 /* FirebaseDynamicLinks in Frameworks */,
+				2FF62EF42AFE935600B15658 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				2FF62F042AFE935600B15658 /* FirebaseMessaging in Frameworks */,
+				2FF62F002AFE935600B15658 /* FirebaseInstallations in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000C4F492B077D29001D0277 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				000C501F2B078D0E001D0277 /* YouTubePlayer.swift */,
+				000C501E2B078D0E001D0277 /* YTPlayer.html */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		000C4F4E2B077F42001D0277 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		000C50222B0790F5001D0277 /* FloatingAudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				000C50242B079106001D0277 /* FloatingAudioModel.swift */,
+				000C50262B079106001D0277 /* FloatingAudioPlayerView.swift */,
+				000C50252B079106001D0277 /* FloatingAudioPlayerView.xib */,
+				000C50232B079106001D0277 /* Media.xcassets */,
+			);
+			path = FloatingAudioPlayer;
+			sourceTree = "<group>";
+		};
+		002860C12B09FB6100660451 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				2F7952012B02637F000F33FD /* NotificationVC.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		004992652B075F590035A4E6 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				000C4F492B077D29001D0277 /* Player */,
+				004992682B075F7E0035A4E6 /* MusicSelectedDelegate.swift */,
+				0049926A2B075FC10035A4E6 /* MusicViewModel.swift */,
+				000C4F472B077919001D0277 /* MusicBottomSheetController.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		008D00E32B080B8B00858D0E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				008D00E42B080BA100858D0E /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		008D00E62B08118B00858D0E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				008D00E72B08119C00858D0E /* CommonCell.swift */,
+				008D00E82B08119C00858D0E /* CommonCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		008D00ED2B081BA300858D0E /* CommonVcs */ = {
+			isa = PBXGroup;
+			children = (
+				2F7952002B02637E000F33FD /* CreatePlaylistVC.swift */,
+				2F7952022B02637F000F33FD /* HomeVC.swift */,
+				008D00EE2B081BE300858D0E /* AddSongVC.swift */,
+			);
+			path = CommonVcs;
+			sourceTree = "<group>";
+		};
+		00DA15BA2B074B2900874433 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				008D00ED2B081BA300858D0E /* CommonVcs */,
+				000C50222B0790F5001D0277 /* FloatingAudioPlayer */,
+				00DA15BB2B074B3300874433 /* IndicatorHud.swift */,
+				008D00EB2B0818DE00858D0E /* BackButton.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		2F79520E2B04576E000F33FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				004992632B075E660035A4E6 /* Playlist.swift */,
+				806EFC682B08ED19003DF42E /* Usermodel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2FF62EA42AFE8DD500B15658 = {
+			isa = PBXGroup;
+			children = (
+				2FF62EAF2AFE8DD500B15658 /* MusicApp */,
+				2FF62EAE2AFE8DD500B15658 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2FF62EAE2AFE8DD500B15658 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FF62EAD2AFE8DD500B15658 /* MusicApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FF62EAF2AFE8DD500B15658 /* MusicApp */ = {
+			isa = PBXGroup;
+			children = (
+				008D00E62B08118B00858D0E /* Cells */,
+				2F79520E2B04576E000F33FD /* Model */,
+				008D00E32B080B8B00858D0E /* ViewModel */,
+				000C4F4E2B077F42001D0277 /* Library */,
+				00DA15BA2B074B2900874433 /* CustomViews */,
+				2FF62ED42AFE8EF700B15658 /* ViewController */,
+				2FF62EC52AFE8E8800B15658 /* Extension */,
+				2FF62EC42AFE8E6B00B15658 /* FirebaseManager */,
+				2FF62EB02AFE8DD500B15658 /* AppDelegate.swift */,
+				2FF62EB22AFE8DD500B15658 /* SceneDelegate.swift */,
+				2FF62EB62AFE8DD500B15658 /* Main.storyboard */,
+				000C50312B07B9F0001D0277 /* GoogleService-Info.plist */,
+				2FF62EB92AFE8DD600B15658 /* Assets.xcassets */,
+				2FF62EBB2AFE8DD600B15658 /* LaunchScreen.storyboard */,
+				2FF62EBE2AFE8DD600B15658 /* Info.plist */,
+			);
+			path = MusicApp;
+			sourceTree = "<group>";
+		};
+		2FF62EC42AFE8E6B00B15658 /* FirebaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				2FF62ECE2AFE8ED000B15658 /* FireStoreManager.swift */,
+				2FF62ED02AFE8ED000B15658 /* ForgetPasswordManager.swift */,
+				2FF62ECF2AFE8ED000B15658 /* UserDefaultsManager.swift */,
+			);
+			path = FirebaseManager;
+			sourceTree = "<group>";
+		};
+		2FF62EC52AFE8E8800B15658 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2FF62EC92AFE8EC100B15658 /* ButtonExtension.swift */,
+				2FF62EC62AFE8EC100B15658 /* ButtonWithShadow.swift */,
+				2FF62EC72AFE8EC100B15658 /* DesignableView.swift */,
+				2FF62EC82AFE8EC100B15658 /* Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2FF62ED42AFE8EF700B15658 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				002860C12B09FB6100660451 /* Notification */,
+				004992652B075F590035A4E6 /* Player */,
+				2FF62ED62AFE8F2E00B15658 /* Home */,
+				2FF62ED52AFE8F1E00B15658 /* Onboarding */,
+				008D00F02B083B6E00858D0E /* SearchPlayListVC.swift */,
+				008D00F22B0843A900858D0E /* SharedPlayListVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2FF62ED52AFE8F1E00B15658 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				2F7952062B026439000F33FD /* ContainerViewController.swift */,
+				2F79520C2B03EBED000F33FD /* SongsDetailsVC.swift */,
+				2F7952132B046597000F33FD /* AddSongsVC.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		2FF62ED62AFE8F2E00B15658 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2FF62F0F2AFE959200B15658 /* LoginVC.swift */,
+				2FF62F112AFE95BB00B15658 /* SignUpVC.swift */,
+				2FF62F132AFE95E200B15658 /* ForgotPassword.swift */,
+				2F79520A2B0278C8000F33FD /* EditProfileVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FF62EAC2AFE8DD500B15658 /* MusicApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FF62EC12AFE8DD600B15658 /* Build configuration list for PBXNativeTarget "MusicApp" */;
+			buildPhases = (
+				2FF62EA92AFE8DD500B15658 /* Sources */,
+				2FF62EAA2AFE8DD500B15658 /* Frameworks */,
+				2FF62EAB2AFE8DD500B15658 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MusicApp;
+			packageProductDependencies = (
+				2FF62ED92AFE935600B15658 /* FirebaseAnalytics */,
+				2FF62EDB2AFE935600B15658 /* FirebaseAnalyticsOnDeviceConversion */,
+				2FF62EDD2AFE935600B15658 /* FirebaseAnalyticsSwift */,
+				2FF62EDF2AFE935600B15658 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				2FF62EE12AFE935600B15658 /* FirebaseAppCheck */,
+				2FF62EE32AFE935600B15658 /* FirebaseAppDistribution-Beta */,
+				2FF62EE52AFE935600B15658 /* FirebaseAuth */,
+				2FF62EE72AFE935600B15658 /* FirebaseAuthCombine-Community */,
+				2FF62EE92AFE935600B15658 /* FirebaseCrashlytics */,
+				2FF62EEB2AFE935600B15658 /* FirebaseDatabase */,
+				2FF62EED2AFE935600B15658 /* FirebaseDatabaseSwift */,
+				2FF62EEF2AFE935600B15658 /* FirebaseDynamicLinks */,
+				2FF62EF12AFE935600B15658 /* FirebaseFirestore */,
+				2FF62EF32AFE935600B15658 /* FirebaseFirestoreCombine-Community */,
+				2FF62EF52AFE935600B15658 /* FirebaseFirestoreSwift */,
+				2FF62EF72AFE935600B15658 /* FirebaseFunctions */,
+				2FF62EF92AFE935600B15658 /* FirebaseFunctionsCombine-Community */,
+				2FF62EFB2AFE935600B15658 /* FirebaseInAppMessaging-Beta */,
+				2FF62EFD2AFE935600B15658 /* FirebaseInAppMessagingSwift-Beta */,
+				2FF62EFF2AFE935600B15658 /* FirebaseInstallations */,
+				2FF62F012AFE935600B15658 /* FirebaseMLModelDownloader */,
+				2FF62F032AFE935600B15658 /* FirebaseMessaging */,
+				2FF62F052AFE935600B15658 /* FirebasePerformance */,
+				2FF62F072AFE935600B15658 /* FirebaseRemoteConfig */,
+				2FF62F092AFE935600B15658 /* FirebaseRemoteConfigSwift */,
+				2FF62F0B2AFE935600B15658 /* FirebaseStorage */,
+				2FF62F0D2AFE935600B15658 /* FirebaseStorageCombine-Community */,
+			);
+			productName = MusicApp;
+			productReference = 2FF62EAD2AFE8DD500B15658 /* MusicApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FF62EA52AFE8DD500B15658 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					2FF62EAC2AFE8DD500B15658 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 2FF62EA82AFE8DD500B15658 /* Build configuration list for PBXProject "MusicApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2FF62EA42AFE8DD500B15658;
+			packageReferences = (
+				2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 2FF62EAE2AFE8DD500B15658 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FF62EAC2AFE8DD500B15658 /* MusicApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FF62EAB2AFE8DD500B15658 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				008D00EA2B08119C00858D0E /* CommonCell.xib in Resources */,
+				000C502C2B079106001D0277 /* FloatingAudioPlayerView.xib in Resources */,
+				000C502A2B079106001D0277 /* Media.xcassets in Resources */,
+				2FF62EBD2AFE8DD600B15658 /* LaunchScreen.storyboard in Resources */,
+				2FF62EBA2AFE8DD600B15658 /* Assets.xcassets in Resources */,
+				000C50202B078D0E001D0277 /* YTPlayer.html in Resources */,
+				000C50322B07B9F0001D0277 /* GoogleService-Info.plist in Resources */,
+				2FF62EB82AFE8DD500B15658 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FF62EA92AFE8DD500B15658 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7952032B02637F000F33FD /* CreatePlaylistVC.swift in Sources */,
+				2F7952042B02637F000F33FD /* NotificationVC.swift in Sources */,
+				2FF62F102AFE959300B15658 /* LoginVC.swift in Sources */,
+				008D00F32B0843A900858D0E /* SharedPlayListVC.swift in Sources */,
+				2FF62ECD2AFE8EC100B15658 /* ButtonExtension.swift in Sources */,
+				2F79520D2B03EBED000F33FD /* SongsDetailsVC.swift in Sources */,
+				008D00F12B083B6E00858D0E /* SearchPlayListVC.swift in Sources */,
+				008D00E52B080BA100858D0E /* ViewModel.swift in Sources */,
+				2FF62ECC2AFE8EC100B15658 /* Extensions.swift in Sources */,
+				2FF62F122AFE95BB00B15658 /* SignUpVC.swift in Sources */,
+				000C502D2B079106001D0277 /* FloatingAudioPlayerView.swift in Sources */,
+				2FF62EB12AFE8DD500B15658 /* AppDelegate.swift in Sources */,
+				2FF62EB32AFE8DD500B15658 /* SceneDelegate.swift in Sources */,
+				000C502B2B079106001D0277 /* FloatingAudioModel.swift in Sources */,
+				2F7952052B02637F000F33FD /* HomeVC.swift in Sources */,
+				00DA15BC2B074B3300874433 /* IndicatorHud.swift in Sources */,
+				2FF62ED22AFE8ED000B15658 /* UserDefaultsManager.swift in Sources */,
+				000C4F482B077919001D0277 /* MusicBottomSheetController.swift in Sources */,
+				0049926B2B075FC10035A4E6 /* MusicViewModel.swift in Sources */,
+				2F7952072B026439000F33FD /* ContainerViewController.swift in Sources */,
+				806EFC692B08ED19003DF42E /* Usermodel.swift in Sources */,
+				000C50212B078D0E001D0277 /* YouTubePlayer.swift in Sources */,
+				2FF62ECB2AFE8EC100B15658 /* DesignableView.swift in Sources */,
+				2FF62ED32AFE8ED000B15658 /* ForgetPasswordManager.swift in Sources */,
+				008D00E92B08119C00858D0E /* CommonCell.swift in Sources */,
+				2FF62F142AFE95E200B15658 /* ForgotPassword.swift in Sources */,
+				2FF62ECA2AFE8EC100B15658 /* ButtonWithShadow.swift in Sources */,
+				004992692B075F7E0035A4E6 /* MusicSelectedDelegate.swift in Sources */,
+				008D00EF2B081BE300858D0E /* AddSongVC.swift in Sources */,
+				2F7952142B046597000F33FD /* AddSongsVC.swift in Sources */,
+				2FF62ED12AFE8ED000B15658 /* FireStoreManager.swift in Sources */,
+				008D00EC2B0818DE00858D0E /* BackButton.swift in Sources */,
+				2F79520B2B0278C8000F33FD /* EditProfileVC.swift in Sources */,
+				004992642B075E660035A4E6 /* Playlist.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2FF62EB62AFE8DD500B15658 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FF62EB72AFE8DD500B15658 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2FF62EBB2AFE8DD600B15658 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FF62EBC2AFE8DD600B15658 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2FF62EBF2AFE8DD600B15658 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2FF62EC02AFE8DD600B15658 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FF62EC22AFE8DD600B15658 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusicApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nwmissouri.MusicApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2FF62EC32AFE8DD600B15658 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusicApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nwmissouri.MusicApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FF62EA82AFE8DD500B15658 /* Build configuration list for PBXProject "MusicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FF62EBF2AFE8DD600B15658 /* Debug */,
+				2FF62EC02AFE8DD600B15658 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FF62EC12AFE8DD600B15658 /* Build configuration list for PBXNativeTarget "MusicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FF62EC22AFE8DD600B15658 /* Debug */,
+				2FF62EC32AFE8DD600B15658 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2FF62ED92AFE935600B15658 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		2FF62EDB2AFE935600B15658 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		2FF62EDD2AFE935600B15658 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		2FF62EDF2AFE935600B15658 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		2FF62EE12AFE935600B15658 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		2FF62EE32AFE935600B15658 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		2FF62EE52AFE935600B15658 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		2FF62EE72AFE935600B15658 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		2FF62EE92AFE935600B15658 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		2FF62EEB2AFE935600B15658 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		2FF62EED2AFE935600B15658 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		2FF62EEF2AFE935600B15658 /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		2FF62EF12AFE935600B15658 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		2FF62EF32AFE935600B15658 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		2FF62EF52AFE935600B15658 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		2FF62EF72AFE935600B15658 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		2FF62EF92AFE935600B15658 /* FirebaseFunctionsCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFunctionsCombine-Community";
+		};
+		2FF62EFB2AFE935600B15658 /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		2FF62EFD2AFE935600B15658 /* FirebaseInAppMessagingSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessagingSwift-Beta";
+		};
+		2FF62EFF2AFE935600B15658 /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		2FF62F012AFE935600B15658 /* FirebaseMLModelDownloader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMLModelDownloader;
+		};
+		2FF62F032AFE935600B15658 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		2FF62F052AFE935600B15658 /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		2FF62F072AFE935600B15658 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		2FF62F092AFE935600B15658 /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+		2FF62F0B2AFE935600B15658 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		2FF62F0D2AFE935600B15658 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF62ED82AFE935600B15658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2FF62EA52AFE8DD500B15658 /* Project object */;
+}
